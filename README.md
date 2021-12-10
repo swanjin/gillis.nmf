@@ -1,10 +1,21 @@
-This repository contains a R package for performing Non-negative Matrix Factorization (NMF) algorithms. 
-The R codes are translated from MATLAB codes in the NMF book (N. Gillis, 2020).
+# spa R package
+This repository contains a R package for performing Successive Projection Algorithm (SPA). 
+This R code is translated from [MATLAB code](https://gitlab.com/ngillis/nmfbook/-/blob/master/algorithms/separable%20NMF/SPA/SPA.m) in the NMF book (N. Gillis, 2020).
 
-To install the nmf package first you need to install devtools:
+# Installing the package
+To install the `spa` package first you need to install devtools:
 
 ```ruby
 install.packages("devtools")
 library(devtools)
 install_github("swanjin/nmf")
+```
+
+# Running the package
+
+The main function in the ashr package is ash. To get minimal help:
+
+```ruby
+library(spa)
+?spa
 ```
