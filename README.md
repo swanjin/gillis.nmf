@@ -8,7 +8,7 @@ To install the `spa` package first you need to install devtools:
 ```ruby
 install.packages("devtools")
 library(devtools)
-install_github("swanjin/nmf")
+install_github("swanjin/spa")
 ```
 
 # Running the package
