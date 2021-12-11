@@ -19,3 +19,9 @@ The main function in the spa package is SPA. To get minimal help:
 library(spa)
 ?SPA
 ```
+
+# Example
+
+```ruby
+SPA(matrix(1:16,4),2,c('normalize'))
+```
