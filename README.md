@@ -13,7 +13,7 @@ install_github("swanjin/spa")
 
 # Running the package
 
-The main function in the ashr package is ash. To get minimal help:
+The main function in the spa package is SPA. To get minimal help:
 
 ```ruby
 library(spa)
