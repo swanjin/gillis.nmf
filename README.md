@@ -17,5 +17,5 @@ The main function in the ashr package is ash. To get minimal help:
 
 ```ruby
 library(spa)
-?spa
+?SPA
 ```
