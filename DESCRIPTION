@@ -1,5 +1,5 @@
-Package: snpa
-Title: Successive Nonnegative Projection Algorithm
+Package: spa
+Title: Successive Projection Algorithm
 Version: 0.0.0.9000
 Authors@R: 
       c(
