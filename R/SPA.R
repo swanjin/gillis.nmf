@@ -68,7 +68,7 @@ SPA <- function(X,r,options=list()){
   i <- 1
   # Perform r recursion steps (unless the relative approximation error is
   # smaller than 10^-9)
-  K <- list()
+  K <- c()
   while (i <= r && sqrt(max(normR)/nXmax) > options.precision){
     # Select the column of M with largest l2-norm
     a <- max(normR)
