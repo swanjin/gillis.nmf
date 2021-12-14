@@ -13,7 +13,7 @@ install_github("swanjin/gillis.nmf")
 
 # Running the package
 
-The one of the functions in the gillis.nmf package is spa. To get minimal help:
+The one of the functions in the `gillis.nmf` package is spa. To get minimal help:
 
 ```ruby
 library(gillis.nmf)
