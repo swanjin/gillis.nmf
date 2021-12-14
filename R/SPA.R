@@ -37,8 +37,6 @@
 #'               where R is the residual, that is, R = X-X(:,K)H.
 #'               default: 1e-6
 #'
-#' "display"   : = 1, displays the iteration count (default)
-#'
 #' @return `K` index set of the extracted columns.
 #'
 #' @export
@@ -53,9 +51,6 @@ SPA <- function(X,r,options=list()){
 
   if ('normalize' %in% options){
     options.normalize <- 1
-  }
-  if (!'display' %in% options){
-    options.display <- 1
   }
   if (!'precision' %in% options){
     options.precision <- 1e-6
@@ -73,9 +68,6 @@ SPA <- function(X,r,options=list()){
   i <- 1
   # Perform r recursion steps (unless the relative approximation error is
   # smaller than 10^-9)
-  if (options.display == 1){
-    cat('Extraction of the indices by SPA: \n')
-  }
   K <- list()
   while (i <= r && sqrt(max(normR)/nXmax) > options.precision){
     # Select the column of M with largest l2-norm
@@ -110,16 +102,7 @@ SPA <- function(X,r,options=list()){
     # Update the norm of the columns of M after orhogonal projection using
     # the formula ||r^(i)_k||^2 = ||r^(i-1)_k||^2 - ( U(:,i)^T m_k )^2 for all k.
     normR <- normR - (t(U[,i]) %*% X)^2
-    if (options.display == 1){
-      sprintf('%2.0f...', i)
-      if (i %% 10 == 0){
-        cat('\n')
-      }
-    }
     i = i + 1
-  }
-  if (options.display == 1){
-    cat("\n")
   }
   return(K)
 }
