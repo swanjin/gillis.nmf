@@ -1,4 +1,4 @@
-#' @name SPA
+#' @name spa
 #' @title Successive projection algorithm for separable NMF
 #'
 #' @description At each step of the algorithm, the column of R maximizing ||.||_2 is
@@ -42,9 +42,9 @@
 #' @export
 #'
 #' @examples
-#' SPA(matrix(1:16,4),2,c('normalize'))
+#' spa(matrix(1:16,4),2,c('normalize'))
 #'
-SPA <- function(X,r,options=list()){
+spa <- function(X,r,options=list()){
 
   m <- dim(X)[1]
   n <- dim(X)[2]

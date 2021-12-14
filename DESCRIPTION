@@ -1,12 +1,10 @@
 Package: gillis.nmf
 Title: Nonnegetive Matrix Factorization
 Version: 0.0.0.9000
-Authors@R: 
-      c(
+Authors@R: c(
     person("Seung-Wan", "Jin", email = "jinsw90@gmail.com", role = c("aut", "cre")),
     person("Matthew", "Stephens", email = "stephens999@gmail.com", role = c("aut")),
-    person("Min-Ha", "Jeong", email = "mh.jeong999@gmail.com", role = c("aut"))
-    )
+    person("Min-Ha", "Jeong", email = "mh.jeong999@gmail.com", role = c("aut")))
 Description: This R package includes Nonnegative Matrix Factorization (NMF) algorithms
       by translating MATLAB codes in the NMF book (N. Gillis, 2020) into R implementation.
 License: use_mit_license()
